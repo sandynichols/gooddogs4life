@@ -53,6 +53,13 @@ if ( ! function_exists( 'gooddogs4life_setup' ) ) :
 				'menu-1' => esc_html__( 'Primary', 'gooddogs4life' ),
 			)
 		);
+		/*Navigation Menus for NAVWALKER*/
+			function register_my_menu() {
+				register_nav_menu('header-menu',__( 'Header Menu' ));
+			}
+			add_action( 'init', 'register_my_menu' );
+			/*End*/
+
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -180,3 +187,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+require_once('class-wp-bootstrap-navwalker.php');

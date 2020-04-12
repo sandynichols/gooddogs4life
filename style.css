@@ -1218,14 +1218,12 @@ object {
 	}
 }
 
-.utility{
+.navbar{
 	background-color:#019fd5;
 	color:#fff;
-	padding:1rem;
-	position:fixed;
-	width:100%;
-	z-index:999;
-	line-height:1rem;
+}
+.bg-primary {
+	background-color:#019fd5 !important;
 }
 
 .site-branding a {
